@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Feedback</title>
+    <link rel="stylesheet" type="text/css" href="./style3.css" />
+  </head>
+  <body>
+    <nav class="zone green sticky">
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="you.html">AI You</a></li>
+        <li class="push"><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="container zone"></div>
+    <div class="zone blue">
+  <article id="contact">
+  <h1>AI and You</h1>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- use inline element p as opposed to empty div-->
+        <p>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="John"
+          />
+        </p>
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+          />
+        </p>
+      <!--fourth section of the same form-->
+      <fieldset>
+        <legend>Send Me a Note</legend>
+        <lable for="message">Your Message:</lable>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Type your message here"
+        ></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="https://httpbin.org/post formmethod="post">Post</button>
+      <button type="reset">Reset</button>
+    </form>
+  </article>
+    </div>
+
+    
+  </body>
+</html>
